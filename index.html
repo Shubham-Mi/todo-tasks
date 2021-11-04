@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Tasks</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script async defer src="script.js"></script>
+    <script
+      async
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <h1>Todo Tasks List</h1>
+    <div>
+      <input
+        type="text"
+        id="inpTask"
+        placeholder="Add Task"
+        title="Add task to list"
+      />
+      <button
+        type="button"
+        class="btn btn-success"
+        id="btnAdd"
+        title="Add task to list"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger"
+        id="btnClear"
+        title="Delete all completed tasks"
+      >
+        <i class="fas fa-trash-alt"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-info"
+        id="btnSort"
+        title="Sort all tasks"
+      >
+        <i class="fas fa-sort"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-warning"
+        id="btnCancel"
+        title="Clear the task field"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div>
+      <ul id="tasks"></ul>
+    </div>
+  </body>
+</html>
